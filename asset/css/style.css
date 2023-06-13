@@ -19,8 +19,8 @@ h6 {
 
 .main {
     position: relative;
-height: 100vh;
-max-height: 600px;
+    height: 100vh;
+    max-height: 600px;
 }
 
 .header {
@@ -29,32 +29,21 @@ max-height: 600px;
     left: 0;
     z-index: 99;
     width: 100%;
-    margin-top: 15px;
     position: fixed;
-    transition: all 3s;
-
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 10000;
-    -webkit-box-shadow: 0 1px 5px rgba(197, 47, 47, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    transition: all 0.2s ease-in-out;
-    height: auto;
-    background-color:transparent;  */
-   
+    transition: 0.5s ease-in-out, color 0.3s ease-in-out; 
       
 }
-.bgcolor
+.header.scrolled{
+    background-color: #06293a; 
+}
+
 .header a{
     font-family: 'Libre Baskerville', serif;
     font-size: 17px;
     font-weight: 500;
     text-decoration: none;
    letter-spacing: 10px;
+
 }
 
 .header h2 {
@@ -68,9 +57,14 @@ max-height: 600px;
 
 }
 
-.logo a h2,
+.logo a,
 .header-icons {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+.logo h2{
+    /* margin-top: 30px; */
     margin-bottom: 10px;
 }
 
@@ -84,8 +78,8 @@ max-height: 600px;
 }
 
 .btn span {
-    width: 30px;
-    height: 3px;
+    width: 32px;
+    height: 2px;
     background-color: white;
     position: absolute;
     transition: .3s;
@@ -121,7 +115,7 @@ max-height: 600px;
 
 .menu {
     height: 100vh;
-    max-height: 900px;
+    max-height: 100vh;
     background-color: rgb(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     /* display: flex; */
@@ -130,11 +124,13 @@ max-height: 600px;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     transition: .3s;
     /* opacity: 0; */
     display: none;
-    align-items: center;
+    /* align-items: center; */
+    /* padding: 6rem; */
+    padding-top: 7rem;
 
 }
 
@@ -147,6 +143,7 @@ max-height: 600px;
     flex-direction: column;
     list-style: none;
     font-family: 'Rubik', sans-serif;
+    max-height: 200px;
 }
 
 .menu_list a {
@@ -160,6 +157,7 @@ max-height: 600px;
     width: 200px;
     padding: 5px 10px;
     margin-left: 50px;
+    
 }
 
 .menu_list a:hover {
@@ -224,7 +222,8 @@ position: relative;
     transform: translateX(0);
 }
 .swiper-slide {
-    /* background: #fff; */
+    display: flex;
+    align-items: center;
 }
 
 
@@ -258,13 +257,14 @@ position: relative;
     height: 100vh;
 }
 .main-swiper-text{
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    /* left: 5%; */
-font-family: 'Rubik', sans-serif;
-
+    /* width: 50%; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    /* margin-top: 15%; */
+    font-family: 'Rubik', sans-serif;
+    /* text-align: center; */
+    /* width: 50%; */
 }
 .main-swiper-text p{
 font-family: 'Noto Sans', sans-serif;
@@ -296,19 +296,17 @@ font-family: 'Noto Sans', sans-serif;
     margin: 0 auto;
 }
 .latest-destination h1{
-    /* font-family: 'Noto Sans', sans-serif; */
     font-family: 'Rubik', sans-serif;
     font-size: 35px;
 }
 .slider-container .swiper-destination {
-    height: 350px;
+    height: 340px;
     display: flex; 
 }
 
 .swiper-slide-destination {
     flex-direction: column;
     overflow: hidden;
-    /* background-color: #fff; */
 }
 .swiper-cards {
     width: 100%;
@@ -317,6 +315,7 @@ font-family: 'Noto Sans', sans-serif;
     width: 100%;
     height: 240px;
     border-radius: 15px;
+object-fit: cover;
 }
 
 .swiper-pagination-bullet-active {
@@ -337,7 +336,7 @@ span.swiper-pagination-bullet {
 }
 
 .wallpaper {
-    background-image: url(../images/6GDq9W.png);
+    background: url(../images/6GDq9W.png)fixed;
     background-size: cover;
     height: 100vh;
     max-height: 1080px;
@@ -347,6 +346,7 @@ span.swiper-pagination-bullet {
 .wallpaper-text {
     position: absolute;
     top: 10%;
+    z-index: 2;
 }
 .wallpaper h3{
    margin-bottom: 30px;
@@ -367,7 +367,6 @@ span.swiper-pagination-bullet {
 }
 .wallpaper button {
     position: absolute;
-    /* top: 50%; */
     border: 3px solid white;
     background-color: transparent;
     width: 170px;
@@ -385,19 +384,13 @@ span.swiper-pagination-bullet {
 .travel-tips {
     background-color: #06293a;
     font-family: 'Noto Sans', sans-serif;
-
 }
 
 .travel-content {
-    /* padding: 35px; */
     margin-top: 70px;
-    /* margin-left: 35px; */
-
     font-weight: 700;
     font-size: 23px;
-
 }
-
 .travel-content h2 {
     font-size: 35px;
     font-weight: 700;
@@ -405,7 +398,7 @@ span.swiper-pagination-bullet {
 
 .travel-tips img {
     width: 100%;
-    height: 540px;
+    height: 530px;
     object-fit: cover;
     border-radius: 15px;
     margin-top: 25px;
@@ -451,7 +444,6 @@ span.swiper-pagination-bullet {
     border-radius: 15px;
 }
 .trip-text p{
-    /* font-family: 'Noto Sans', sans-serif; */
     font-family: 'Rubik', sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -471,7 +463,6 @@ span.swiper-pagination-bullet {
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     color: #06293a;
-
 }
 .trip-with-us {
     border-bottom: 3px solid #b1afaf;
@@ -484,8 +475,6 @@ span.swiper-pagination-bullet {
     text-transform: uppercase;
     -webkit-text-stroke: 2px black;
     color: #fff;
-    /* margin-top: 60px; */
-
 }
 
 .trip-with-us button {
@@ -507,7 +496,6 @@ span.swiper-pagination-bullet {
 }
 
 .swiper-collection {
-    /* margin-top: 20px; */
     height: 20.5em;
     display: flex;
 }
@@ -517,7 +505,6 @@ span.swiper-pagination-bullet {
     overflow: hidden;
     background-color: #fff;
     border-radius: 15px;
-
     position: relative;
 }
 
@@ -532,13 +519,9 @@ span.swiper-pagination-bullet {
 
 .collection-text h2 {
     font-family: 'Rubik', sans-serif;
-
     text-transform: uppercase;
-    /* color: black; */
     font-size: 30px;
     font-weight: 600;
-
-
 }
 
 .collection-text h1 {
@@ -570,12 +553,12 @@ span.swiper-pagination-bullet {
 
 .testimonial-container{
     background-color: rgb(248, 246, 245);
-    margin: 0 auto;
+    /* margin: 0 auto; */
    position: relative;
+   padding: 3rem 0;
 }
 .testimonial-container .swiper-testimonial{
     height: 250px;
-    /* display: flex;  */
 }
 .testimonial-heading h1{
 font-family: 'Rubik', sans-serif;
@@ -592,6 +575,10 @@ font-family: 'Rubik', sans-serif;
 }
 .swiper-slide-testimonial h2{
     font-size: 25px;
+
+}
+.testimonial-container .swiper-pagination{
+    bottom: 0%;
 }
 .supporters-container{
     margin: 0 auto;
@@ -609,7 +596,8 @@ overflow: hidden;
 }
 .swiper-slide-supporters img {
     width: 100%;
-    height: 240px;
+    height: 250px;
+    /* object-fit: fill; */
     /* border-radius: 15px; */
     /* color: #06293a; */
 }
@@ -623,26 +611,45 @@ font-weight: 500;
     background: rgb(10,7,1);
     background: linear-gradient(0deg, rgba(10,7,1,1) 6%, rgba(6,41,58,1) 24%);
     position: relative;
+    padding-top: 60px;
+}
+.contact{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+.newsletter{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-section{
-    position: absolute;
+    /* position: absolute;
     top: 40%;
     transform: translateY(-60%);
-    right: 30%;
+    right: 30%; */
     background-color: #fff;
-    width: 40%;
+    /* width: 40%; */
     border-radius: 15px;
-    height: 180px;
+    /* height: 180px; */
     /* display: grid;
     place-items: center; */
-
+z-index: 2;
+width: 100%;
 }
+.index{
+    z-index: 2;
+} 
 
 .bottom-main img{
-    width: 90%;
-    margin-top: 90px;
-    height: 550px;
+    width: 100%;
+    /* margin-top: 90px; */
+    height: 100%;
     object-fit: cover;
+    
 }
 .form input{
     width: 250px;
@@ -650,6 +657,9 @@ font-weight: 500;
     border-radius: 0%;
     box-shadow: none !important;
 }
+.form .form-control::placeholder{
+    color: #000000; 
+  }
 
 .text h2{
     font-family: 'Rubik', sans-serif;
@@ -660,7 +670,6 @@ font-size: 25px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 15px;
-
 }
 .form button{
     border: none;
@@ -683,8 +692,8 @@ font-size: 25px;
    letter-spacing: 10px;
 }
 .copyright p{
-    /* position: absolute;
-    bottom: 0%; */
+    position: absolute;
+    bottom: 8%;
     font-family: 'Rubik', sans-serif;
 font-size:20px;
 font-weight: 400;
@@ -702,4 +711,12 @@ font-weight: 500;
 }
 .follow li:nth-child(5) {
     margin-top: 35px;
+}
+.wallpaper-slider{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    right: 0%;
+    left: 5%;
+    z-index: 1;
 }

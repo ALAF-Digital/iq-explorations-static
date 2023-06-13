@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://use.typekit.net/hcv3mil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Aboutpage</title>
+</head>
+
+<body>
+    <div class="header " id="header">
+        <div class="container text-black">
+
+            <div class="logo d-flex align-items-center justify-content-between">
+                <a href="#" class="text-black">IQ EXPLORATIONS</a>
+
+                <div class="header-icons d-flex align-items-center">
+                    <i class="fas fa-search mx-3" style="color: #000000;"></i>
+                    <h2 class="mx-3 ">عربي</h2>
+                    <button class="btn" onclick="toggleMenu(this)">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="menu">
+        <div class="container">
+            <ul class="menu_list">
+                <li class="menu_item">
+                    <a href="#" title="">Homepage</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" title="">About me</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" title="">Destinations</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" title="">Travel Tips</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" title="">Wallpapers</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" title="">Trips</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" title="">Prints</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" title="">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script src="asset/js/jquery-3.6.0.min.js "></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<!-- menu -->
+<script>
+
+    function toggleMenu(element) {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('is-active');
+        element.classList.toggle('is-active');
+    }
+</script>
+<!-- menu-end -->
