@@ -339,7 +339,7 @@ span.swiper-pagination-bullet {
     background: url(../images/wallpaper-banner.png)fixed;
     background-size: cover;
     height: 80vh;
-    max-height: 1080px;
+    max-height: 780px;
     position: relative;
     font-family: 'Rubik', sans-serif;
 }
@@ -350,6 +350,12 @@ span.swiper-pagination-bullet {
     right: 0%;
     left: 0%;
     z-index: 1;
+}
+.wallpaper-images img{
+    height: 300px;
+    width: 32%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 .wallpaper-text {
     position: absolute;
@@ -463,7 +469,7 @@ span.swiper-pagination-bullet {
     width: 140px;
     height: 40px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 450;
     font-size: 22px;
     margin-bottom: 40px;
 }
@@ -698,7 +704,7 @@ letter-spacing: 2px;
     color: white;
     font-family: 'Rubik', sans-serif;
 font-size: 20px;
-font-weight: 500;
+font-weight: 400;
 }
 .follow li:nth-child(5) {
     margin-top: 35px;
