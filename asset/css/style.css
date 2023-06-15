@@ -226,31 +226,31 @@ position: relative;
 
 
 .slider1 {
-    background-image: url(../images/images\ for\ the\ website/Serbia/0Z9A8013.jpg);
+    background-image: url(../images/0Z9A8013\ copy.jpg);
     background-size: cover;
     height: 100vh;
 }
 
 .slider2 {
-    background-image: url(../images/images\ for\ the\ website/Iceland/IMG_0473.jpg);
+    background-image: url(../images/IMG_0473\ copy.jpg);
     background-size: cover;
     height: 100vh;
 }
 
 .slider3 {
-    background-image: url(../images/IQ-Slider01.png);
+    background-image: url(../images/IQ-Slider01\ copy.png);
     background-size: cover;
     height: 100vh;
 }
 
 .slider4 {
-    background: url(../images/images\ for\ the\ website/Oman/0Z9A3945.jpg)fixed;
+    background: url(../images/0Z9A3945\ copy.jpg)fixed;
     background-size: cover;
     height: 100vh;
 }
 
 .slider5 {
-    background-image: url(../images/images\ for\ the\ website/Iceland/0Z9A2305-Edit.jpg);
+    background-image: url(../images/0Z9A2305-Edit\ copy.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -290,13 +290,12 @@ font-family: 'Noto Sans', sans-serif;
 .slider-container {
     background-color: #fff;
 }
-/* .card_slide{
-    width: 80%;
-} */
+
 .latest-destination h1{
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
     margin-top: 20px;
+   
 }
 .slider-container .swiper-destination {
     height: 340px;
