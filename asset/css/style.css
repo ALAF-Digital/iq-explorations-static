@@ -299,6 +299,7 @@ font-family: 'Noto Sans', sans-serif;
 }
 .slider-container .swiper-destination {
     height: 340px;
+    max-height: 540px;
     display: flex; 
 }
 
@@ -338,8 +339,8 @@ span.swiper-pagination-bullet {
 .wallpaper {
     background: url(../images/wallpaper-banner.png)fixed;
     background-size: cover;
-    height: 80vh;
-    max-height: 780px;
+    height: 100vh;
+    max-height: 930px;
     position: relative;
     font-family: 'Rubik', sans-serif;
 }
@@ -352,7 +353,7 @@ span.swiper-pagination-bullet {
     z-index: 1;
 }
 .wallpaper-images img{
-    height: 300px;
+    height: 360px;
     width: 32%;
     object-fit: cover;
     border-radius: 15px;
@@ -398,6 +399,7 @@ span.swiper-pagination-bullet {
 .travel-tips {
     background-color: #06293a;
     font-family: 'Noto Sans', sans-serif;
+    max-height: 1380px;
 }
 
 .travel-content {
@@ -433,12 +435,10 @@ span.swiper-pagination-bullet {
     height: 250px;
 }
 
-.swiper-container{
-    position: relative;
-    padding: 0 15px;
-    margin-top: 40px;
-}
 
+.trips-container{
+    max-height: 1330px;
+}
 .trips_slide{
     margin-top: -3rem;
 }
@@ -507,7 +507,12 @@ span.swiper-pagination-bullet {
     font-weight: 500;
     text-transform: uppercase;
 }
-
+.swiper-container{
+    position: relative;
+    padding: 0 15px;
+    margin-top: 40px;
+    max-height: 650px;
+}
 .swiper-collection {
     height: 20.5em;
     display: flex;
@@ -570,6 +575,7 @@ span.swiper-pagination-bullet {
 }
 .testimonial-container .swiper-testimonial{
     height: 250px;
+    max-height: 500px;
 }
 .testimonial-heading h1{
 font-family: 'Rubik', sans-serif;
@@ -597,6 +603,7 @@ font-family: 'Rubik', sans-serif;
 }
 .supporters-container .swiper-supporters{
     height: 250px;
+    max-height: 500px;
 }
 .swiper-slide-supporters{
     flex-direction: column;
@@ -680,6 +687,7 @@ font-size: 22px;
     margin-top: 30px;
     border-top: 3px solid #b1afaf;
     position: relative;
+    max-height: 1550px;
 }
 .footer-logo a{
     font-family: 'Libre Baskerville', serif;
