@@ -5,7 +5,7 @@ font-family: 'Rubik', sans-serif;
 } */
 @font-face{
     font-family: myfont;
-    src: url(MrsSaintDelafield-Regular.ttf);
+    src: url(MrsSaintDelafield.ttf);
 }
 .container {
     max-width: 1440px;
@@ -62,7 +62,7 @@ h6 {
 
 .logo a,
 .header-icons {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;   
 }
 .logo h2{
@@ -226,13 +226,13 @@ position: relative;
 
 
 .slider1 {
-    background-image: url(../images/ocean.jpg);
+    background-image: url(../images/images\ for\ the\ website/Serbia/0Z9A8013.jpg);
     background-size: cover;
     height: 100vh;
 }
 
 .slider2 {
-    background-image: url(../images/photo.jpg);
+    background-image: url(../images/images\ for\ the\ website/Iceland/IMG_0473.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -337,7 +337,7 @@ span.swiper-pagination-bullet {
 }
 
 .wallpaper {
-    background: url(../images/6GDq9W.png)fixed;
+    background: url(../images/wallpaper-banner.png)fixed;
     background-size: cover;
     height: 80vh;
     max-height: 1080px;
@@ -591,7 +591,7 @@ font-family: 'Rubik', sans-serif;
    position: relative;
 }
 .supporters-container .swiper-supporters{
-    height: 300px;
+    height: 250px;
 }
 .swiper-slide-supporters{
     flex-direction: column;
@@ -602,7 +602,7 @@ overflow: hidden;
 }
 .swiper-slide-supporters img {
     width: 100%;
-    height: 250px;
+    /* height: 200px; */
 }
 .supporters-heading h1{
     text-transform: uppercase;
