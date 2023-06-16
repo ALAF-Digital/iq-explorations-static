@@ -226,13 +226,13 @@ h6 {
 }
 
 .slider2 {
-  background-image: url(../images/02.jpg);
+  background-image: url(../images/Slider/Slide2.png);
   background-size: cover;
   height: 100vh;
 }
 
 .slider3 {
-  background-image: url(../images/03.jpg);
+  background-image: url(../images/Slider/Slide3.png);
   background-size: cover;
   height: 100vh;
 }
