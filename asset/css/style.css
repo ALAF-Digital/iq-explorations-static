@@ -5,7 +5,7 @@ font-family: 'Rubik', sans-serif;
 } */
 @font-face{
     font-family: myfont;
-    src: url(MrsSaintDelafield.ttf);
+    src:url(MrsSaintDelafield.ttf);
 }
 .container {
     max-width: 1440px;
@@ -226,24 +226,25 @@ position: relative;
 
 
 .slider1 {
-    background-image: url(../images/0Z9A8013\ copy.jpg);
+    background-image: url(../images/01.png);
     background-size: cover;
     height: 100vh;
+    /* width: 100%; */
 }
 
 .slider2 {
-    background-image: url(../images/IMG_0473\ copy.jpg);
+    background-image: url(../images/02.jpg);
     background-size: cover;
     height: 100vh;
 }
 
 .slider3 {
-    background-image: url(../images/IQ-Slider01\ copy.png);
+    background-image: url(../images/03.jpg);
     background-size: cover;
     height: 100vh;
 }
 
-.slider4 {
+/* .slider4 {
     background: url(../images/0Z9A3945\ copy.jpg)fixed;
     background-size: cover;
     height: 100vh;
@@ -253,16 +254,17 @@ position: relative;
     background-image: url(../images/0Z9A2305-Edit\ copy.jpg);
     background-size: cover;
     height: 100vh;
-}
+} */
 
 .main-swiper-text{
     font-family: 'Rubik', sans-serif;
-    padding: 35px;
+    /* padding: 35px; */
+    margin-top: 120px;
 }
-.main-swiper-text .main-swiper-text-1 h1{
-    font-family: myfont;
+/* .main-swiper-text .main-swiper-text-1 h1{
+    font-family:myfont;
     font-size: 40px;
-}
+} */
 .main-swiper-text p{
 font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
@@ -337,14 +339,14 @@ span.swiper-pagination-bullet {
 }
 
 .wallpaper {
-    background: url(../images/wallpaper-banner.png)fixed;
+    background-image: url(../images/wallpaper.jpeg)/* fixed */ ;
     background-size: cover;
     height: 100vh;
     max-height: 930px;
     position: relative;
     font-family: 'Rubik', sans-serif;
 }
-.wallpaper-slider{
+/* .wallpaper-slider{
     position: absolute;
     top: 30%;
     width: 100%;
@@ -357,7 +359,7 @@ span.swiper-pagination-bullet {
     width: 32%;
     object-fit: cover;
     border-radius: 15px;
-}
+} */
 .wallpaper-text {
     position: absolute;
     top: 10%;
@@ -567,7 +569,36 @@ span.swiper-pagination-bullet {
     text-decoration: none;
     color: black;
 }
-
+/* .collection-text button:hover .animation-element{
+    animation: rotate-scale 2s ease-in-out forwards;
+}
+.collection-text button a:hover{
+    color: #06293a;
+    text-decoration: underline;
+}
+@keyframes rotate-scale {
+    40% {
+      transform: rotateY(0) scale(1);
+    }
+    50% {
+      transform: rotateY(180deg) scale(1.2);
+    }
+    100% {
+      transform: rotateY(360deg) scale(1);
+    }
+  }
+  
+  .animation-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  } */
 .testimonial-container{
     background-color: rgb(248, 246, 245);
    position: relative;
@@ -592,7 +623,6 @@ font-family: 'Rubik', sans-serif;
 }
 .swiper-slide-testimonial h2{
     font-size: 20px;
-
 }
 .testimonial-container .swiper-pagination{
     bottom: 0%;
@@ -717,3 +747,71 @@ font-weight: 400;
 .follow li:nth-child(5) {
     margin-top: 35px;
 }
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* .container {
+      width: 100%;
+    } */
+  .main .container{
+    width: 80%;
+  }
+    .main-swiper-text {
+      padding: 5px;
+    }
+  .header .container{
+    width: 80%;
+  }
+    .header-icons {
+      margin-right: 10px;
+    }
+  
+    .header-icons i {
+      font-size: 20px;
+    }
+  
+    .menu {
+      /* padding-top: 5rem; */
+    }
+  
+    .menu_list a {
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+    }
+  }
+
+  /* Mobile styles */
+@media (max-width: 768px) {
+    /* .wallpaper .container {
+      width: 80%;
+    } */
+  
+    .wallpaper-text h1{
+      font-size: 50px;
+      font-weight: 500;
+      -webkit-text-stroke: 1px white;
+    }
+    .wallpaper h3{
+         font-size: 20px;
+         font-weight: 400;   
+     }
+    .wallpaper button{
+        font-size: 18px;
+        border: 2px solid white;
+        width: 120px;
+        height: 30px;
+    }
+    .wallpaper-images {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .wallpaper-images img {
+      /* width: 100%; */
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  }
