@@ -24,7 +24,7 @@ h6 {
 .main {
     position: relative;
     height: 100vh;
-    max-height: 600px;
+    max-height: 1080px;
 }
 
 .header {
@@ -302,6 +302,7 @@ font-family: 'Noto Sans', sans-serif;
 .slider-container .swiper-destination {
     height: 340px;
     max-height: 540px;
+    
     display: flex; 
 }
 
