@@ -141,11 +141,13 @@ h6 {
 }
 
 .menu_list a {
+  font-family: 'Rubik', sans-serif;
   text-decoration: none;
+  line-height: 2em;
   position: relative;
   display: inline-flex;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.5em;
   color: #fff;
   transition: 0.3s;
   width: 200px;
@@ -284,6 +286,7 @@ h6 {
 
 .slider-container {
   background-color: #fff;
+  max-height: 643px;
 }
 
 .latest-destination h1 {
