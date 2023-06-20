@@ -179,7 +179,6 @@ h6 {
 .mySwiper.swiper {
   width: 100%;
   height: 100%;
-
 }
 .mySwiper .swiper-pagination {
   right: 7rem;
@@ -236,7 +235,7 @@ h6 {
 .slider3 {
   background-image: url(../images/Slider/Slide3.webp);
   background-size: cover;
-  height: 100vh;
+  height: 100vh; 
 }
 
 /* .slider4 {
@@ -304,6 +303,7 @@ h6 {
   max-height: 540px;
 
   display: flex;
+
 }
 
 .swiper-slide-destination {
@@ -316,9 +316,9 @@ h6 {
 }
 .swiper-slide-destination img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: cover;
   overflow: hidden;
 }
 
@@ -481,12 +481,23 @@ span.swiper-pagination-bullet {
   margin-top: 40px;
   flex-direction: column;
 }
-
+.trips_slide .swiper-slide {
+  overflow: hidden;
+}
 .trips_slide .swiper-slide img {
   width: 100%;
-  /* height: 210px; */
+  height: 200px;
+  max-height: 230px;
   border-radius: 15px;
+  object-fit: cover;
 }
+
+
+/* .trips_slide .swiper-slide img {
+  width: 100%;
+  height: 210px;
+  
+} */
 .trip-text p {
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
@@ -667,6 +678,9 @@ span.swiper-pagination-bullet {
   flex-direction: column;
   overflow: hidden;
 }
+.supporters_slide {
+  height: 160px;
+}
 .supporters-cards {
   width: 100%;
 }
@@ -759,6 +773,10 @@ span.swiper-pagination-bullet {
   text-decoration: none;
   letter-spacing: 10px;
 }
+.footer-explore{
+  width: 40%;
+  margin-top: 10px;
+}
 .copyright p {
   position: absolute;
   bottom: 8%;
@@ -782,7 +800,8 @@ span.swiper-pagination-bullet {
 }
 .privacy i{
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
+  margin-inline: 5px;
   margin-top: 35px;
 }
 
@@ -853,21 +872,11 @@ span.swiper-pagination-bullet {
   }
 }
 
-.trips_slide .swiper-slide {
-  overflow: hidden;
+@media (min-width: 1600px) {
+.container{
+  width:40% ;
 }
-.trips_slide .swiper-slide img {
-  width: 100%;
-  height: auto;
-  max-height: 230px;
-}
-/* .trips_slide img{
-    width: 600px !important;
-    height: 390px !important;
-  } */
 
-.supporters_slide {
-  height: 160px;
 }
 
 
