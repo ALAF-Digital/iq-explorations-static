@@ -235,7 +235,7 @@ h6 {
 .slider3 {
   background-image: url(../images/Slider/Slide3.webp);
   background-size: cover;
-  height: 100vh; 
+  height: 100vh;
 }
 
 /* .slider4 {
@@ -249,7 +249,7 @@ h6 {
     background-size: cover;
     height: 100vh;
 } */
-.main-swiper-text-1 img{
+.main-swiper-text-1 img {
   width: 90%;
   margin-bottom: 10px;
 }
@@ -303,7 +303,6 @@ h6 {
   max-height: 540px;
 
   display: flex;
-
 }
 
 .swiper-slide-destination {
@@ -491,7 +490,6 @@ span.swiper-pagination-bullet {
   border-radius: 15px;
   object-fit: cover;
 }
-
 
 /* .trips_slide .swiper-slide img {
   width: 100%;
@@ -773,7 +771,7 @@ span.swiper-pagination-bullet {
   text-decoration: none;
   letter-spacing: 10px;
 }
-.footer-explore{
+.footer-explore {
   width: 40%;
   margin-top: 10px;
 }
@@ -798,7 +796,7 @@ span.swiper-pagination-bullet {
 .follow li:nth-child(5) {
   margin-top: 35px;
 }
-.privacy i{
+.privacy i {
   color: #fff;
   font-size: 25px;
   margin-inline: 5px;
@@ -871,12 +869,3 @@ span.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
 }
-
-@media (min-width: 1600px) {
-.container{
-  width:40% ;
-}
-
-}
-
-
