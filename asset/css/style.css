@@ -299,8 +299,8 @@ h6 {
   margin-top: 20px;
 }
 .slider-container .swiper-destination {
-  height: 290px;
-  max-height: 540px;
+  /* height: 290px; */
+  /* max-height: 540px; */
 
   display: flex;
 
@@ -309,7 +309,7 @@ h6 {
 .swiper-slide-destination {
   flex-direction: column;
   overflow: hidden;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .swiper-cards {
   width: 100%;
