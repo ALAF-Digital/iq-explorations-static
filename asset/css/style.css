@@ -9,6 +9,7 @@ font-family: 'Rubik', sans-serif;
 }
 .container {
   max-width: 1137px;
+  /* max-width: 1380px; */
   width: 90%;
 }
 .container-fluid{
@@ -17,10 +18,14 @@ font-family: 'Rubik', sans-serif;
 .main .container-fluid{
   /* width: 80%; */
   /* max-width: ; */
-  max-width: 1200px;
+  max-width: 1220px;
+  /* width: 1440px; */
+
 }
 .header .container-fluid{
-  max-width: 1200px;
+  max-width: 1220px;
+  /* width: 1440px; */
+
 
 }
 .h1,
@@ -192,10 +197,27 @@ h6 {
 .mySwiper.swiper {
   width: 100%;
   height: 100%;
+  position: absolute;
+}
+.mySwiper::before{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background: rgb(10, 7, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: 22;
 }
 .mySwiper .swiper-pagination {
   right: 7rem;
-  /* top: 12rem; */
+  top: 55%;
 }
 .mySwiper .swiper-pagination-bullet {
   font-family: 'Noto Sans', sans-serif;
@@ -757,7 +779,7 @@ span.swiper-pagination-bullet {
   object-fit: cover;
 }
 .form input {
-  width: 250px;
+  /* width: 250px; */
   border: 1px solid black !important;
   border-radius: 0%;
   box-shadow: none !important;
@@ -823,11 +845,22 @@ span.swiper-pagination-bullet {
   margin-top: 35px;
   /* display: flex; */
 }
-.privacy i {
+
+
+.follow-me{
+margin-left: 32px;
+margin-right: 5px;
+text-decoration: none;
+color: #fff !important;
+font-family: 'Rubik', sans-serif;
+font-size: 20px;
+  font-weight: 400;
+}
+.follow-meon i{
+  /* margin-inline: 5px; */
   color: #fff;
-  font-size: 25px;
-  margin-inline: 5px;
-  margin-top: 35px;
+  font-size: 20px;
+  margin: 3px;
 }
 
 /* Mobile styles */
