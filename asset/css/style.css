@@ -24,7 +24,7 @@ h6 {
 .main {
   position: relative;
   height: 100vh;
-  max-height: 1080px;
+  max-height: 700px;
 }
 
 .header {
@@ -899,4 +899,29 @@ span.swiper-pagination-bullet {
 
 }
 
+/* @media (min-width:1600px) {
+  .slider1 {
+    background-image: url(../images/Slider/IQ_Slide1.webp);
+    background-size: cover;
+    max-height: 800px;
 
+    
+  }
+  
+  .slider2 {
+    background-image: url(../images/Slider/Slide2.webp);
+    background-size: cover;
+    max-height: 800px;
+
+   
+  }
+  
+  .slider3 {
+    background-image: url(../images/Slider/Slide3.webp);
+    background-size: cover;
+    max-height: 800px;
+
+
+   
+  }
+} */
