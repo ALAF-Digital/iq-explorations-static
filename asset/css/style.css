@@ -213,7 +213,7 @@ h6 {
 }
 .mySwiper .swiper-pagination {
   right: 7rem;
-  top: 55%;
+  top: 50%;
 }
 .mySwiper .swiper-pagination-bullet {
   font-family: 'Noto Sans', sans-serif;
@@ -253,21 +253,21 @@ h6 {
 }
 
 .slider1 {
-  background-image: url(../images/Slider/IQ_Slide1.webp);
+  background-image: url(../images/Slider/Component\ 1\ GÇô\ 1.png);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .slider2 {
-  background-image: url(../images/Slider/Slide2.webp);
+  background-image: url(../images/Slider/Component\ 2\ GÇô\ 1.png);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .slider3 {
-  background-image: url(../images/Slider/Slide3.webp);
+  background-image: url(../images/Slider/Component\ 3\ GÇô\ 1.png);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 /* .slider4 {
@@ -919,38 +919,35 @@ font-size: 20px;
   }
   /* .trip-with-us a {
     text-decoration: none;
-    padding: 3px 10px;
-    font-size: 20px;
+    padding: 3px 20px;
+    font-size: 30px;
     font-weight: 500;
   
   } */
 
 }
-/* @media (max-width: 1280px){
+@media (min-width: 768px) and (max-width: 1024px) {
 .trip-with-us a {
   
   text-decoration: none;
-  padding: 5px 80px;
-  font-size: 47px;
+  padding: 5px 35px;
+  font-size: 50px;
   font-weight: 500;
 
 }
-} */
-@media (max-width: 1135px){
-  /* .trip-with-us button {
-    width: 100%;
-    height: 95px;
-    
-  } */
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
   
-  /* .trip-with-us a {
+  
+  .trip-with-us a {
     text-decoration: none;
     color: #06293a;
     font-family: 'Rubik', sans-serif;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 500;
     text-transform: uppercase;
-  } */
+    padding: 5px 50px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -958,10 +955,10 @@ font-size: 20px;
   display: block;
   padding-top: 12rem;
 }
-.mySwiper .swiper-pagination {
-  /* right: 7rem; */
+/* .mySwiper .swiper-pagination {
+  right: 7rem;
   top: 18rem;
-}
+} */
 
 }
 
