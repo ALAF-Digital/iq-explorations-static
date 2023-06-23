@@ -1,8 +1,3 @@
-/* body{
-    font-family: 'Noto Kufi Arabic', sans-serif;
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Rubik', sans-serif;
-} */
 @font-face {
   font-family: myfont;
   src: url(MrsSaintDelafield.ttf);
@@ -10,7 +5,7 @@ font-family: 'Rubik', sans-serif;
 .container {
   max-width: 1137px;
   /* max-width: 1380px; */
-  width: 90%;
+  /* width: 90%; */
 }
 .container-fluid{
   width: 95%;
@@ -18,15 +13,16 @@ font-family: 'Rubik', sans-serif;
 .main .container-fluid{
   /* width: 80%; */
   /* max-width: ; */
-  max-width: 1220px;
+  /* max-width: 1320px; */
   /* width: 1440px; */
 
 }
+.menu .container-fluid{
+  /* max-width: 1220px; */
+}
 .header .container-fluid{
-  max-width: 1220px;
+  /* max-width: 1320px; */
   /* width: 1440px; */
-
-
 }
 .h1,
 h2,
@@ -40,7 +36,7 @@ h6 {
 .main {
   position: relative;
   height: 100vh;
-  max-height: 700px;
+  max-height: 880px;
 }
 
 .header {
@@ -202,7 +198,7 @@ h6 {
 .mySwiper::before{
   content: '';
   position: absolute;
-  bottom: 0px;
+  bottom: -2px;
   right: 0px;
   left: 0px;
   width: 100%;
@@ -288,11 +284,11 @@ h6 {
 .main-swiper-text-1 img {
   width: 90%;
   margin-bottom: 10px;
+
 }
 .main-swiper-text {
   font-family: 'Rubik', sans-serif;
   padding: 0px 20px;
-  /* margin-top: 120px; */
 }
 /* .main-swiper-text .main-swiper-text-1 h1{
     font-family:myfont;
@@ -311,11 +307,12 @@ h6 {
 .main-swiper-text button {
   border: 2px solid white;
   background-color: transparent;
-  width: 160px;
-  height: 40px;
+  /* width: 160px;
+  height: 40px; */
   text-transform: uppercase;
   font-weight: 400;
   font-size: 22px;
+  padding: 5px 18px;
 }
 .main-swiper-text a {
   text-decoration: none;
@@ -432,8 +429,9 @@ span.swiper-pagination-bullet {
   position: absolute;
   border: 2px solid white;
   background-color: transparent;
-  width: 160px;
-  height: 40px;
+  /* width: 160px;
+  height: 40px; */
+  padding: 5px 18px ;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 22px;
@@ -553,8 +551,9 @@ span.swiper-pagination-bullet {
 .trip-text button {
   border: 2px solid #06293a;
   background-color: transparent;
-  width: 140px;
-  height: 40px;
+  /* width: 140px;
+  height: 40px; */
+  padding: 5px 18px ;
   text-transform: uppercase;
   font-weight: 450;
   font-size: 22px;
@@ -579,8 +578,9 @@ span.swiper-pagination-bullet {
 }
 
 .trip-with-us button {
-  width: 100%;
-  height: 95px;
+  /* width: 100%;
+  height: 95px; */
+  padding: 5px 65px;
   border: 2px solid #a0bcca;
   background-color: rgb(171, 225, 244);
   margin-bottom: 40px;
@@ -640,7 +640,8 @@ span.swiper-pagination-bullet {
 
 .collection-text button {
   border: 2px solid black;
-  width: 310px;
+  /* width: 310px; */
+  padding: 2px 25px;
   background-color: #fff;
   margin-top: 10px;
   margin-left: 8px;
@@ -857,7 +858,6 @@ font-size: 20px;
   font-weight: 400;
 }
 .follow-meon i{
-  /* margin-inline: 5px; */
   color: #fff;
   font-size: 20px;
   margin: 3px;
@@ -865,29 +865,18 @@ font-size: 20px;
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  /* .container {
-      width: 100%;
-    } */
-  .main .container {
-    /* width: 80%; */
+ 
+  .header a{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 10px;
   }
-  /* .main-swiper-text {
-    padding: 5px;
-  } */
-  /* .header .container {
-    width: 80%;
-  } */
-  /* .header-icons {
-    margin-right: 10px;
-  } */
-
-  /* .header-icons i {
-    font-size: 20px;
-  } */
-
-  .menu {
-    /* padding-top: 5rem; */
+  .header-icons i {
+    font-size: 18px;
   }
+  
 
   .menu_list a {
     margin: 10px 0;
@@ -898,10 +887,6 @@ font-size: 20px;
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  /* .wallpaper .container {
-      width: 80%;
-    } */
-
   .wallpaper-text h1 {
     font-size: 50px;
     font-weight: 500;
@@ -914,13 +899,17 @@ font-size: 20px;
   .wallpaper button {
     font-size: 18px;
     border: 2px solid white;
-    width: 120px;
-    height: 30px;
+    padding: 3px 5px ;
   }
-  .wallpaper-images {
+  .collection-text h1 {
+    font-weight: 500;
+    font-size: 80px;
+   
+  }
+  /* .wallpaper-images {
     flex-wrap: wrap;
     justify-content: center;
-  }
+  } */
 
   .wallpaper-images img {
     /* width: 100%; */
@@ -928,8 +917,25 @@ font-size: 20px;
     height: auto;
     margin-bottom: 1rem;
   }
+  /* .trip-with-us a {
+    text-decoration: none;
+    padding: 3px 10px;
+    font-size: 20px;
+    font-weight: 500;
+  
+  } */
 
 }
+/* @media (max-width: 1280px){
+.trip-with-us a {
+  
+  text-decoration: none;
+  padding: 5px 80px;
+  font-size: 47px;
+  font-weight: 500;
+
+}
+} */
 @media (max-width: 1135px){
   /* .trip-with-us button {
     width: 100%;
@@ -937,21 +943,17 @@ font-size: 20px;
     
   } */
   
-  .trip-with-us a {
+  /* .trip-with-us a {
     text-decoration: none;
     color: #06293a;
     font-family: 'Rubik', sans-serif;
     font-size: 50px;
     font-weight: 500;
     text-transform: uppercase;
-  }
+  } */
 }
 
 @media (min-width: 1440px) {
-/* .container{
-  width:40% ;
-} */
-
 .mySwiper .swiper-slide{
   display: block;
   padding-top: 12rem;
