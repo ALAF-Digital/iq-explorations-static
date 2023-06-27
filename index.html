@@ -28,8 +28,9 @@
 <body>
   <div class="main  ">
     <!-- Swiper -->
-
     <div class="swiper mySwiper">
+<div class="overlay"></div>
+
       <div class="swiper-wrapper text-white">
         <div class="swiper-slide  slider1 ">
           <div class="container-fluid">
@@ -187,7 +188,7 @@
           <div class="swiper-wrapper swiper-destination">
             <div class="swiper-slide swiper-slide-destination">
               <div class="swiper-cards">
-                <img src="asset/images/images for the website/Uzbekistan/0Z9A9563 copy.webp" alt="">
+                <img src="asset/images/images for the website/Uzbekistan/0Z9A9563-copy.webp" alt="">
               </div>
               <div class="swiper-text">
                 <h1>Samarkand</h1>
@@ -206,7 +207,7 @@
 
             <div class="swiper-slide swiper-slide-destination">
               <div class="swiper-cards">
-                <img src="asset/images/images for the website/Bosnia/0Z9A6090.webp" alt="">
+                <img src="asset/images/images for the website/Bosnia/0Z9A6090-(1)-(1)-(1).webp" alt="">
               </div>
               <div class="swiper-text">
                 <h1>Bosnia</h1>
@@ -228,7 +229,7 @@
 
             <div class="swiper-slide swiper-slide-destination">
               <div class="swiper-cards">
-                <img src="asset/images/images for the website/Germany/0Z9A8053.webp" alt="">
+                <img src="asset/images/images for the website/Germany/0Z9A8053-(1).webp" alt="">
               </div>
               <div class="swiper-text">
                 <h1>Bosnia</h1>
@@ -291,7 +292,7 @@
           <div class="travel-content1 text-white">
             <img src="asset/images/images for the website/Serbia/0Z9A3210-copy.webp" class="m-0 mb-3" alt="">
             <p>How to find the best spot to capture Milky Way</p>
-            <img src="asset/images/images for the website/India/0Z9A8786.webp" class="m-0 mb-3" alt="">
+            <img src="asset/images/images for the website/India/0Z9A8786 (1).webp" class="m-0 mb-3" alt="">
             <p>Places you may not know they exist in Abu Dhabi</p>
           </div>
         </div>
@@ -322,7 +323,7 @@
           </div>
 
           <div class="swiper-slide">
-            <img src="asset/images/trips 2 copy.webp" alt="">
+            <img src="asset/images/trips-2-copy (1).webp" alt="">
             <div class="trip-text">
               <p>8 days trip to kenya this summer including Masai Mara,Amboseli and Lake Naivasha</p>
               <button><a href="#">book now</a></button>
@@ -540,7 +541,7 @@
     <div class="container">
       <div class="newsletter">
         <div class="contact text-center">
-          <img src="asset/images/Colage.png" class="" alt="">
+          <img src="asset/images/Colage---Copy.webp" class="" alt="">
         </div>
         <div class="col-md-6 index mx-auto">
           <div class="form-section d-flex justify-content-between p-4">
@@ -678,6 +679,7 @@
   var swiper = new Swiper(".card_slide", {
     slidesPerView: 1,
     spaceBetween: 20,
+    // effect: 'fade',
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -696,7 +698,8 @@
       }
     }
     ,
-    // loop: true,
+    loop: true,
+    centeredSlides:true,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,
@@ -707,7 +710,7 @@
 
 <script>
   var swiper = new Swiper(".print_slide", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -726,7 +729,8 @@
       }
     }
     ,
-    // loop: true,
+    loop: true,
+    centeredSlides:true,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,
@@ -748,7 +752,7 @@
 <!-- trip-slide -->
 <script>
   var swiper = new Swiper(".trips_slide", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -767,7 +771,8 @@
       }
     }
     ,
-    // loop: true,
+    loop: true,
+    centeredSlides:true,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,
@@ -789,7 +794,8 @@
       clickable: true,
     }
     ,
-    // loop: true,
+    loop: true,
+    centeredSlides:true,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,
@@ -819,7 +825,8 @@
       }
     }
     ,
-    // loop: true,
+    loop: true,
+    // centeredSlides:true,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,

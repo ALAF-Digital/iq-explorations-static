@@ -49,7 +49,7 @@ h6 {
   transition: 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 .header.scrolled {
-  background-color: #06293a;
+  background-color: rgba(0, 0, 0, 25%);
 }
 
 .header a {
@@ -202,7 +202,7 @@ h6 {
   right: 0px;
   left: 0px;
   width: 100%;
-  height: 100px;
+  height: 200px;
   background: rgb(10, 7, 1);
   background: linear-gradient(
     180deg,
@@ -251,40 +251,37 @@ h6 {
   display: flex;
   align-items: center;
 }
-
+.overlay{
+  position: absolute;
+  top:0;
+    left:0;
+    right:0;
+    bottom:0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 32%);
+  z-index: 2;
+}
 .slider1 {
-  background-image: url(../images/Slider/Component\ 1\ GÇô\ 1.png);
+  background-image: url(../images/Slider/Component-1-GÃ_Ã´-1.png);
   background-size: cover;
   height: 100%;
 }
 
 .slider2 {
-  background-image: url(../images/Slider/Component\ 2\ GÇô\ 1.png);
+  background-image: url(../images/Slider/Component-2-GÃ_Ã´-1.png);
   background-size: cover;
   height: 100%;
 }
 
 .slider3 {
-  background-image: url(../images/Slider/Component\ 3\ GÇô\ 1.png);
+  background-image: url(../images/Slider/Component-3-GÃ_Ã´-1.png);
   background-size: cover;
   height: 100%;
 }
 
-/* .slider4 {
-    background: url(../images/0Z9A3945\ copy.jpg)fixed;
-    background-size: cover;
-    height: 100vh;
-}
-
-.slider5 {
-    background-image: url(../images/0Z9A2305-Edit\ copy.jpg);
-    background-size: cover;
-    height: 100vh;
-} */
 .main-swiper-text-1 img {
   width: 90%;
   margin-bottom: 10px;
-
 }
 .main-swiper-text {
   font-family: 'Rubik', sans-serif;
@@ -374,9 +371,16 @@ span.swiper-pagination-bullet {
   font-family: 'Rubik', sans-serif;
   margin-top: 20px;
 }
+.card_slide .swiper-slide{
+transition: 0.7s;
+opacity: 0;
+}
+.card_slide .swiper-slide-active,.card_slide .swiper-slide-prev,.card_slide .swiper-slide-next{
+  opacity: 1;
+  }
 
 .wallpaper {
-  background-image: url(../images/wallpaper-banner.png);
+  background-image: url(../images/wallpaper-banner.webp);
   background-size: cover;
   /* height: 100vh; */
   min-height: 760px;
@@ -474,7 +478,6 @@ span.swiper-pagination-bullet {
 }
 
 .travel-content {
-  /* margin-top: 70px; */
   font-weight: 600;
   font-size: 20px;
 }
@@ -521,7 +524,13 @@ span.swiper-pagination-bullet {
   bottom: auto;
   top: 0;
 }
-
+.trips_slide .swiper-slide{
+  transition: 0.7s;
+  opacity: 0;
+  }
+  .trips_slide .swiper-slide-active,.trips_slide .swiper-slide-prev,.trips_slide .swiper-slide-next{
+    opacity: 1;
+    }
 .trips_slide .swiper-slide {
   margin-top: 40px;
   flex-direction: column;
@@ -655,6 +664,15 @@ span.swiper-pagination-bullet {
   text-decoration: none;
   color: black;
 }
+
+
+.print_slide .swiper-slide{
+  transition: 0.7s;
+  opacity: 0;
+  }
+  .print_slide .swiper-slide-active,.print_slide .swiper-slide-prev,.print_slide .swiper-slide-next{
+    opacity: 1;
+    }
 /* .collection-text button:hover .animation-element{
     animation: rotate-scale 2s ease-in-out forwards;
 }
@@ -692,7 +710,6 @@ span.swiper-pagination-bullet {
 }
 .testimonial-container .swiper-testimonial {
   height: 250px;
-  max-height: 500px;
 }
 .testimonial-heading h1 {
   font-family: 'Rubik', sans-serif;
@@ -713,6 +730,13 @@ span.swiper-pagination-bullet {
 .testimonial-container .swiper-pagination {
   bottom: 0%;
 }
+.testimonial_slide .swiper-slide{
+  transition: 0.7s;
+  opacity: 0;
+  }
+  .testimonial_slide .swiper-slide-active,.testimonial_slide .swiper-slide-prev,.testimonial_slide .swiper-slide-next{
+    opacity: 1;
+    }
 .supporters-container {
   margin: 0 auto;
   position: relative;
@@ -733,13 +757,21 @@ span.swiper-pagination-bullet {
 }
 .swiper-slide-supporters img {
   width: 100%;
-  /* height: 200px; */
 }
 .supporters-heading h1 {
   text-transform: uppercase;
   font-family: 'Rubik', sans-serif;
   font-size: 25px;
 }
+
+
+.supporters_slide .swiper-slide{
+  transition: 0.7s;
+  opacity: 0;
+  }
+  .supporters_slide .swiper-slide-active,.supporters_slide .swiper-slide-prev,.supporters_slide .swiper-slide-next{
+    opacity: 1;
+    }
 .bottom-main {
   background: rgb(10, 7, 1);
   background: linear-gradient(
@@ -864,33 +896,259 @@ font-size: 20px;
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
- 
-  .header a{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 12px;
+
+@media (max-width:1200px) {
+  .trip-with-us button {
+    /* padding: 5px 35px; */
+    font-size: 50px;
+  width: 100%;
+  display: inline-block;
+  }
+  .trip-with-us a {
+    font-size: 50px;
+  } 
+}
+@media (max-width:991px) {
+  .main-swiper-text p{
+  font-size: 16px;
+  }
+  .main-swiper-text h1{
+    font-size: 32px;
+  }
+  .menu_list a {
+    line-height: 1.7em;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .trips-text h1 {
+    font-size: 90px;
+  }
+  .trip-with-us button {
+    padding: 2px 20px;
+  }
+  .trip-with-us a {
+    font-size: 40px;
+  }
+  .collection-text h2 {
+    font-size: 23px;
     font-weight: 500;
-    text-decoration: none;
+  }
+  
+  .collection-text h1 {
+    font-size: 105px;
+  }
+  
+  .collection-text button {  
+    padding: 2px 25px;
+  }
+  
+  .collection-text button a {
+    font-size: 20px;
+    font-weight: 500;
+  }
+ 
+  .testimonial-heading h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+  }
+  .swiper-slide-testimonial p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .swiper-slide-testimonial h2 {
+    font-size: 18px;
+  }
+  .footer-logo a {
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+  .footer-explore {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .copyright p {
+    bottom: 8%;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+  .follow a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .follow-me{
+    margin-left: 35px;
+    font-size: 12px;
+      font-weight: 400;
+    }
+    .follow-meon i{
+      font-size: 12px;
+    }
+}
+
+
+
+/* .follow li:nth-child(5) {
+  margin-top: 35px;
+} */
+
+
+
+
+
+
+
+@media (max-width:767px) {
+  .main-swiper-text{
+    width: 70%;
+  }
+  .main-swiper-text p{
+    font-size: 14px;
+    }
+    .main-swiper-text h1{
+      font-size: 26px;
+    }
+    .main-swiper-text button{
+      font-size: 16px;
+    }
+  .header a{
+    font-size: 12px;
     letter-spacing: 10px;
   }
   .header-icons i {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .btn span {
+    width: 25px;
+    /* height: 2px; */
+  }
+  .header h2{
+font-weight: 400;
   }
   
-
   .menu_list a {
-    margin: 10px 0;
-    padding: 8px;
+    line-height: 1.5em;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .mySwiper .swiper-pagination {
+    right: 5rem;
+  }
+  .wallpaper{
+  min-height: 550px;
+    
+  }
+  .wallpaper-text h1 {
+    font-size: 62px;
+    font-weight: 500;
+    -webkit-text-stroke: 1px white;
+  }
+  .wallpaper h3 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .wallpaper button {
+    font-size: 22px;
+    padding: 3px 5px ;
+  }
+  .trips-text h1 {
+    font-size: 70px;
+  }
+  
+  .travel-tips {
+  padding: 5rem 0;
+  }
+  .trip-with-us button {
+    padding: 3px 15px;
+  }
+  .trip-with-us a {
+    font-size: 30px;
+  }
+  .collection-text{
+    text-align: center;
+margin-bottom: 15px;
+  }
+  .collection-text h1 {
+    font-size: 80px;
+  }
+
+  .supporters-container .swiper-supporters {
+    height: 280px;
+  }
+
+  .supporters_slide {
+    height: 250px;
+  }
+  .supporters-cards {
     width: 100%;
   }
+  .swiper-slide-supporters img {
+    width: 100%;
+  }
+  .supporters-heading h1 {
+    font-size: 22px;
+  }
+
+  .footer-logo a {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+  .footer-explore {
+    width: 45%;
+    margin-top: 10px;
+  }
+  .copyright p {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .follow-me{
+    /* margin-left: 343px; */
+    font-size: 12px;
+      font-weight: 400;
+    }
+    .follow-meon i{
+      font-size: 12px;
+    }
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
+
+@media (max-width:576px) {
+  .menu {
+    height: 100vh;
+  }
+  .main-swiper-text p{
+    font-size: 13px;
+    }
+    .main-swiper-text h1{
+      font-size: 17px;
+    }
+    .main-swiper-text button{
+      font-size: 12px;
+    }
+  .header a{
+    font-size: 8px;
+    letter-spacing: 5px;
+  }
+  .header-icons i {
+    font-size: 12px;
+  }
+  .btn span {
+    width: 20px;
+    /* height: 2px; */
+  }
+  .header h2{
+font-weight: 300;
+  } 
+  .mySwiper .swiper-pagination {
+    display: none;
+  }
   .wallpaper-text h1 {
     font-size: 50px;
     font-weight: 500;
     -webkit-text-stroke: 1px white;
+  }
+  .wallpaper{
+    min-height: 450px;
   }
   .wallpaper h3 {
     font-size: 20px;
@@ -901,32 +1159,95 @@ font-size: 20px;
     border: 2px solid white;
     padding: 3px 5px ;
   }
-  .collection-text h1 {
-    font-weight: 500;
-    font-size: 80px;
-   
+  .trips_slide .swiper-pagination {
+    display: none;
   }
-  /* .wallpaper-images {
-    flex-wrap: wrap;
-    justify-content: center;
-  } */
-
-  .wallpaper-images img {
-    /* width: 100%; */
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 1rem;
+  .trips-text h1 {
+    font-size: 45px;
   }
-  /* .trip-with-us a {
-    text-decoration: none;
-    padding: 3px 20px;
-    font-size: 30px;
-    font-weight: 500;
+  .travel-tips .mycol-1 {
+    width: 100%;
+  }
+  .travel-tips .mycol-2 {
+    width: 100%;
+  }
+  .travel-tips img {
+    height: 200px;
+  }
+  .trip-text button {
+    font-size: 16px;
+  }
+  .trip-with-us button {
+    /* padding: 3px 10px; */
+  }
+  .trip-with-us a {
+    font-size: 15px;
+  }
+  .collection-text h2 {
+    font-size: 17px;
+  }
   
-  } */
+  .collection-text h1 {
+    font-size: 50px;
+  }
+  .collection-text button a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .testimonial-container .swiper-testimonial {
+    height: 290px;
+  }
 
+  .testimonial-heading h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+  }
+  .swiper-slide-testimonial p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .swiper-slide-testimonial h2 {
+    font-size: 16px;
+  }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width:321px) {
+  .header a{
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+  .header-icons i {
+    font-size: 12px;
+  }
+  .btn span {
+    width: 13px;
+  }
+  .trip-with-us button {
+    /* padding: 5px 35px; */
+  }
+  .wallpaper{
+    min-height: 360px;
+  }
+  .travel-tips .mycol-1 {
+    width: 100%;
+  }
+  .travel-tips .mycol-2 {
+    width: 100%;
+  }
+  .travel-tips img {
+    height: 200px;
+  }
+  
+  .trip-with-us a {
+    font-size: 12px;
+  }
+  .testimonial-container{
+    padding: 1rem 0;
+  }
+  .testimonial-container .swiper-testimonial {
+    height: 320px;
+  }
+}
+/* @media (min-width: 768px) and (max-width: 1024px) {
 .trip-with-us a {
   
   text-decoration: none;
@@ -948,13 +1269,13 @@ font-size: 20px;
     text-transform: uppercase;
     padding: 5px 50px;
   }
-}
+} */
 
 @media (min-width: 1440px) {
-.mySwiper .swiper-slide{
+/* .mySwiper .swiper-slide{
   display: block;
   padding-top: 12rem;
-}
+} */
 /* .mySwiper .swiper-pagination {
   right: 7rem;
   top: 18rem;
@@ -962,29 +1283,4 @@ font-size: 20px;
 
 }
 
-/* @media (min-width:1600px) {
-  .slider1 {
-    background-image: url(../images/Slider/IQ_Slide1.webp);
-    background-size: cover;
-    max-height: 800px;
 
-    
-  }
-  
-  .slider2 {
-    background-image: url(../images/Slider/Slide2.webp);
-    background-size: cover;
-    max-height: 800px;
-
-   
-  }
-  
-  .slider3 {
-    background-image: url(../images/Slider/Slide3.webp);
-    background-size: cover;
-    max-height: 800px;
-
-
-   
-  }
-} */
