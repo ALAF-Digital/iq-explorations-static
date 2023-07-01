@@ -250,6 +250,7 @@ h6 {
 .swiper-slide {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .overlay{
   position: absolute;
@@ -259,7 +260,7 @@ h6 {
     bottom:0;
   height: 100vh;
   background-color: rgba(0, 0, 0, 32%);
-  z-index: 2;
+  z-index: -1;
 }
 .slider1 {
   background-image: url(../images/Slider/Component-1-GÃ_Ã´-1.png);
@@ -286,6 +287,7 @@ h6 {
 .main-swiper-text {
   font-family: 'Rubik', sans-serif;
   padding: 0px 20px;
+  /* z-index: 4; */
 }
 /* .main-swiper-text .main-swiper-text-1 h1{
     font-family:myfont;
@@ -304,8 +306,6 @@ h6 {
 .main-swiper-text button {
   border: 2px solid white;
   background-color: transparent;
-  /* width: 160px;
-  height: 40px; */
   text-transform: uppercase;
   font-weight: 400;
   font-size: 22px;
@@ -857,8 +857,8 @@ opacity: 0;
   margin-top: 10px;
 }
 .copyright p {
-  position: absolute;
-  bottom: 8%;
+  /* position: absolute; */
+  /* bottom: 8%; */
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -892,7 +892,7 @@ font-size: 20px;
 .follow-meon i{
   color: #fff;
   font-size: 20px;
-  margin: 3px;
+  /* margin: 3px; */
 }
 
 /* Mobile styles */
@@ -910,10 +910,13 @@ font-size: 20px;
 }
 @media (max-width:991px) {
   .main-swiper-text p{
-  font-size: 16px;
+  font-size: 15px;
   }
   .main-swiper-text h1{
-    font-size: 32px;
+    font-size: 24px;
+  }
+  .main-swiper-text button{
+    font-size: 17px;
   }
   .menu_list a {
     line-height: 1.7em;
@@ -967,7 +970,7 @@ font-size: 20px;
     margin-top: 10px;
   }
   .copyright p {
-    bottom: 8%;
+    /* bottom: 8%; */
     font-size: 14px;
     font-weight: 400;
     letter-spacing: normal;
@@ -1000,16 +1003,19 @@ font-size: 20px;
 
 @media (max-width:767px) {
   .main-swiper-text{
-    width: 70%;
+    /* width: 40%; */
   }
+  /* .slider2 .container-fluid{
+    width: 20%;
+  } */
   .main-swiper-text p{
-    font-size: 14px;
+    font-size: 12px;
     }
     .main-swiper-text h1{
-      font-size: 26px;
+      font-size: 22px;
     }
     .main-swiper-text button{
-      font-size: 16px;
+      font-size: 14px;
     }
   .header a{
     font-size: 12px;
@@ -1059,7 +1065,9 @@ font-weight: 400;
   padding: 5rem 0;
   }
   .trip-with-us button {
-    padding: 3px 15px;
+    padding: 5px 35px;
+    line-height: 0;
+    padding-bottom: 11px;
   }
   .trip-with-us a {
     font-size: 30px;
@@ -1126,15 +1134,14 @@ margin-bottom: 15px;
       font-size: 12px;
     }
   .header a{
-    font-size: 8px;
+    font-size: 7px;
     letter-spacing: 5px;
   }
   .header-icons i {
-    font-size: 12px;
+    font-size: 10px;
   }
   .btn span {
-    width: 20px;
-    /* height: 2px; */
+    width: 17px;
   }
   .header h2{
 font-weight: 300;
@@ -1178,7 +1185,9 @@ font-weight: 300;
     font-size: 16px;
   }
   .trip-with-us button {
-    /* padding: 3px 10px; */
+    /* padding: 5px 35px; */
+    line-height: 0;
+    padding-bottom: 12px;
   }
   .trip-with-us a {
     font-size: 15px;
@@ -1209,10 +1218,50 @@ font-weight: 300;
   .swiper-slide-testimonial h2 {
     font-size: 16px;
   }
+  .text h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .form h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+  }
+  .form button {
+    border: none;
+    margin-top: 10px;
+    background-color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .footer-logo a {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .footer-explore {
+    width: 55%;
+    /* margin-top: 10px; */
+  }
+  .copyright p {
+    font-size: 10px;
+  }
+  .follow a {
+    font-size: 8px;
+  }
+  .follow-me{
+    /* margin-left: 343px; */
+    font-size: 12px;
+    }
+    .follow-meon i{
+      font-size: 12px;
+    }
 }
+
 @media (max-width:321px) {
   .header a{
-    font-size: 8px;
+    font-size: 6px;
     letter-spacing: 3px;
   }
   .header-icons i {
@@ -1223,6 +1272,8 @@ font-weight: 300;
   }
   .trip-with-us button {
     /* padding: 5px 35px; */
+    line-height: 0;
+    padding-bottom: 15px;
   }
   .wallpaper{
     min-height: 360px;
@@ -1246,41 +1297,6 @@ font-weight: 300;
   .testimonial-container .swiper-testimonial {
     height: 320px;
   }
-}
-/* @media (min-width: 768px) and (max-width: 1024px) {
-.trip-with-us a {
-  
-  text-decoration: none;
-  padding: 5px 35px;
-  font-size: 50px;
-  font-weight: 500;
-
-}
-}
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
-  .trip-with-us a {
-    text-decoration: none;
-    color: #06293a;
-    font-family: 'Rubik', sans-serif;
-    font-size: 55px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 5px 50px;
-  }
-} */
-
-@media (min-width: 1440px) {
-/* .mySwiper .swiper-slide{
-  display: block;
-  padding-top: 12rem;
-} */
-/* .mySwiper .swiper-pagination {
-  right: 7rem;
-  top: 18rem;
-} */
-
 }
 
 
