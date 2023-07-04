@@ -1435,6 +1435,35 @@ font-weight: 400;
   color:#4483a2;
 }
 /* Portugal */
+.por-main-text{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.por-main-heading h1{
+  font-family: 'Rubik', sans-serif;
+font-size: 50px;
+font-weight: 600;
+}
+.por-para-text p{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+color: #656363;
+}
+.por-main-text button{
+  border: solid 2px #BC7F66;
+  padding: 3px 20px;
+  background-color: #fff;
+}
+.por-para-text a{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 500;
+text-decoration: none;
+color: #000000;
+}
+.por-para-text i{
+  margin-left: 10px;
+}
 .portugal-main{
   padding-top: 100px;
 }
@@ -1445,7 +1474,7 @@ font-weight: 400;
   border-radius: 25px;
 }
 .portugal-content{
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .portugal-heading h1{
   font-family: 'Rubik', sans-serif;
@@ -1455,4 +1484,185 @@ font-size: 45px;
   font-family: 'Noto Sans', sans-serif;
   font-size: 22px;
   font-weight: 600;
+}
+.por-visit-heading h1{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.por-visit-text p{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 600;
+}
+.por-visit-image img{
+  border-radius: 20px;
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+}
+.por-visit-image p{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 18px;
+font-weight: 500;
+color: #656363;
+padding-top: 10px;
+}
+
+.portugal-content img{
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.portugal-content p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #656363;
+  padding-top: 10px;
+}
+.what-to-visit{
+  padding: 1.5rem 0;
+}
+.what-to-visit-text h3{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 28px;
+font-weight: 700;
+}
+.what-to-visit-text p{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 600;
+padding-top: 15px;
+}
+.southshore p{
+  padding-top: 0;
+}
+.southshore-images img{
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.southshore-images p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #656363;
+  padding-top: 10px;
+}
+.Diamond-Beach a{
+  color:#4483a2;
+}
+.blue-lagoon-text{
+  padding-top: 20px;
+}
+.blue-lagoon-text .italic{
+  font-style: italic;
+  font-family: 'Noto Sans', sans-serif;
+}
+.Northern-Lights-text a{
+  color:#4483a2;
+}
+.Northern-Lights-text img{
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.blog-like{
+  padding-top: 40px;
+}
+
+.blog-like-text h4{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #BC7F66;
+  padding-right: 8px;
+}
+.blog-like-text p{
+  font-family: 'Rubik', sans-serif;
+font-size: 20px;
+}
+.blog-like-text1 h4{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #BC7F66;
+  padding-right: 10px;
+}
+.blog-like-text1 button{
+
+ border: solid 2px #BC7F66;
+  padding: 3px 20px;
+  background-color: #fff;
+}
+.blog-like-text1 a{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 500;
+text-decoration: none;
+color: #000000;
+}
+.blog-like-text1 i{
+  margin-left: 10px;
+}
+.travel-padd{
+  padding: 2rem 0;
+
+}
+.travel-experience{
+  background-color: #e3dcdc;
+  border-radius: 20px;
+}
+.travel-experience .inner-padd{
+  padding: 22px 20px;
+}
+.travel-experience-image img{
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+object-fit: cover;
+}
+.travel-experience-text h4{
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.travel-experience-text p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Travel Tips */
+.travel-tip{
+padding-top: 120px;
+
+}
+.travel-heading h1{
+  font-family: 'Rubik', sans-serif;
+font-size: 45px;
+padding-bottom: 40px;
+}
+.travel-cards img{
+  width: 100%;
+  height: 230px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.travel-cards p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.travel-cards a{
+  font-size: 18px;
+  color: #000000;
+}
+.travel-cards3 a{
+ text-decoration: none;
 }
