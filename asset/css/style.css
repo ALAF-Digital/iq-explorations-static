@@ -1637,7 +1637,29 @@ object-fit: cover;
   font-size: 17px;
   font-weight: 500;
 }
+@media (max-width:991px) {
+  .blog-like-text1 button{
+    display: none;
+}
+}
+@media (max-width:767px) {
+  .blog-like-text1 h4{
+ text-align: end;
+  }
+}
+@media (max-width:576px){
+  .por-main-text{
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .por-main-text p{
+    display: none;
+  }
+  .blog-like-text p{
+display: none;
 
+  }
+}
 /* Travel Tips */
 .travel-tip{
 padding-top: 120px;
@@ -1658,6 +1680,7 @@ padding-bottom: 40px;
   font-family: 'Noto Sans', sans-serif;
   font-size: 25px;
   font-weight: 600;
+  padding-top: 12px;
 }
 .travel-cards a{
   font-size: 18px;
@@ -1665,4 +1688,172 @@ padding-bottom: 40px;
 }
 .travel-cards3 a{
  text-decoration: none;
+}
+.explore-text{
+  padding-top: 80px;
+}
+.explore-text h4{
+  font-family: 'Rubik', sans-serif;
+font-size: 37px;
+font-weight: 500;
+padding-bottom: 10px;
+}
+.explore-text a{
+  font-family: 'Noto Sans', sans-serif;
+text-decoration: none;
+color: #656363;
+font-size: 18px;
+font-weight: 500;
+}
+.explore-section{
+  padding-bottom: 40px;
+}
+.explore-cards{
+  position: relative;
+}
+.explore-cards img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.explore-cards-text{
+  font-family: 'Rubik', sans-serif;
+position: absolute;
+bottom: 0%;
+color: #fff ;
+padding: 18px;
+padding-bottom: 40px;
+}
+.explore-cards-text p{
+  font-size: 28px;
+}
+.explore-cards-text a{
+color: #fff;
+font-size: 15px;
+}
+@media (max-width:767px){
+  .explore-text{
+    padding-left: 20px;
+  }
+  .explore-cards{
+padding: 20px;
+  }
+}
+
+
+/* Mobile Wallpapers */
+.mobile-wallpapers{
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.wallpaper-heading h1{
+  font-family: 'Rubik', sans-serif;
+font-size: 45px;
+}
+.wallpaper-para p{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 24px;
+font-weight: 500;
+padding-bottom: 10px;
+}
+.wallpaper-para button{
+border-radius: 5px;
+ border: 1px solid black;
+background-color: #fff;
+padding: 3px 15px;
+}
+.wallpaper-para a{
+  /* display: flex; */
+  font-family: 'Noto Sans', sans-serif;
+font-size: 13px;
+font-weight: 700;
+  text-decoration: none;
+  color: #656363;
+text-align: center;
+}
+.wallpaper-content{
+  position: relative;
+}
+.wallpaper-pictures img{
+  border-radius: 20px;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.wallpaper-likes{
+  font-family: 'Rubik', sans-serif;
+font-size: 15px;
+font-weight: 600;
+/* position: absolute;
+bottom: 0%;
+color: #fff;
+left: 60px; */
+}
+.wallpaper-button{
+  /* padding: 3rem 0; */
+}
+.wallpaper-button a{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 25px;
+font-weight: 500;
+text-decoration: none;
+color: #000000;
+}
+
+/* Trips */
+.trips-section{
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.trips-main-image img{
+  border-radius: 20px;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+.trips-heading h1{
+  font-family: 'Rubik', sans-serif;
+font-size: 45px;
+}
+.trips-para p{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 500;
+}
+.trips-para a{
+  color:#4483a2;
+}
+.trips-pictures{
+  padding: 3rem 0;
+}
+.trips-pictures img{
+  border-radius: 20px;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.trips-text h3{
+  font-family: 'Rubik', sans-serif;
+font-size: 25px;
+font-weight: 600;
+padding-top: 20px;
+}
+.trips-text p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.trips-text button{
+  border: 2px solid #BC7F66;
+  background-color: #fff;
+  padding: 3px 20px;
+}
+.trips-text a{
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 600;
 }
