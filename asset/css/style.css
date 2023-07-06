@@ -50,6 +50,7 @@ h6 {
 }
 .header.scrolled {
   background-color: rgba(0, 0, 0, 25%);
+
 }
 
 .header a {
@@ -459,7 +460,7 @@ opacity: 0;
   }
 }
 .travel-tips {
-  background-color: #06293a;
+  background-color: #062a3c;
   padding: 6rem 0;
   font-family: 'Rubik', sans-serif;
   max-height: 1380px;
@@ -1327,12 +1328,13 @@ color: #BC7F66;
   font-family: 'Rubik', sans-serif;
   font-size: 37px;
   font-weight: 600;
-  color: #1d5875;
+  color: #3A6175;
 }
 .para p{
   font-family: 'Noto Sans', sans-serif;
 font-size: 22px;
-font-weight: 500;
+font-weight: normal;
+/* font-weight: 500; */
 }
 .about-bottom{
   padding-bottom: 70px;
@@ -1374,11 +1376,14 @@ padding-bottom: 30px;
 }
 .desti-heading h1{
 font-size: 45px;
+color: #243544;
 }
 .asia{
   border-bottom: 1px solid #000000;
 }
-
+.asia h1{
+color: #243544;
+}
 .asia-content{
   padding-top: 50px;
 }
@@ -1405,34 +1410,36 @@ font-weight: 700;
 .contact-heading h1{
 font-size: 45px;
 font-weight: 600;
-padding-left:10px ;
 }
 .contact-heading h2{
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   padding-top: 10px;
 color: #BC7F66;
 }
 .contact-heading p{
-font-size: 23px;
-font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+font-size: 22px;
+font-weight: 500;
 padding-top: 30px;
 }
 .social-links p{
+  font-family: 'Noto Sans', sans-serif;
 font-size: 20px;
-font-weight: 400;
+font-weight: 500;
 }
 .social-links a{
   text-decoration: none;
-  color:#4483a2;
+  color:#4E8BC1;
 }
 .contact-num p{
+  font-family: 'Noto Sans', sans-serif;
 font-size: 20px;
-font-weight: 400;
+font-weight: 500;
 
 }
 .contact-num a{
-  color:#4483a2;
+  color:#4E8BC1;
 }
 /* Portugal */
 .por-main-text{
@@ -1554,7 +1561,7 @@ padding-top: 15px;
   padding-top: 10px;
 }
 .Diamond-Beach a{
-  color:#4483a2;
+  color:#4E8BC1;
 }
 .blue-lagoon-text{
   padding-top: 20px;
@@ -1564,7 +1571,7 @@ padding-top: 15px;
   font-family: 'Noto Sans', sans-serif;
 }
 .Northern-Lights-text a{
-  color:#4483a2;
+  color:#4E8BC1;
 }
 .Northern-Lights-text img{
   width: 100%;
@@ -1586,13 +1593,15 @@ padding-top: 15px;
 .blog-like-text p{
   font-family: 'Rubik', sans-serif;
 font-size: 20px;
+padding-top: 18px;
+padding-right: 80px;
 }
 .blog-like-text1 h4{
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: #BC7F66;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 .blog-like-text1 button{
 
@@ -1611,31 +1620,38 @@ color: #000000;
   margin-left: 10px;
 }
 .travel-padd{
-  padding: 2rem 0;
-
-}
-.travel-experience{
+  padding: 1.2rem 0;
   background-color: #e3dcdc;
   border-radius: 20px;
+  margin: 2rem 0;
 }
+/* .travel-experience{
+ 
+} */
 .travel-experience .inner-padd{
-  padding: 22px 20px;
+  padding: 0px 20px;
 }
 .travel-experience-image img{
   border-radius: 20px;
   width: 100%;
-  height: 200px;
+  height: 180px;
 object-fit: cover;
+/* margin-left: 15px; */
 }
 .travel-experience-text h4{
   font-family: 'Rubik', sans-serif;
   font-size: 22px;
   font-weight: 600;
+  /* padding-bottom: 10px ; */
 }
 .travel-experience-text p{
   font-family: 'Noto Sans', sans-serif;
   font-size: 17px;
   font-weight: 500;
+  /* width: 95%; */
+}
+.travel-experience-text a{
+  color: #3896e9;
 }
 @media (max-width:991px) {
   .blog-like-text1 button{
@@ -1786,10 +1802,14 @@ text-align: center;
   font-family: 'Rubik', sans-serif;
 font-size: 15px;
 font-weight: 600;
-/* position: absolute;
+position: absolute;
 bottom: 0%;
 color: #fff;
-left: 60px; */
+/* justify-content: center; */
+/* width: 100%; */
+}
+.wallpaper-likes p{
+  
 }
 .wallpaper-button{
   /* padding: 3rem 0; */
@@ -1816,6 +1836,7 @@ color: #000000;
 .trips-heading h1{
   font-family: 'Rubik', sans-serif;
 font-size: 45px;
+font-weight: 500;
 }
 .trips-para p{
   font-family: 'Noto Sans', sans-serif;
@@ -1823,10 +1844,14 @@ font-size: 20px;
 font-weight: 500;
 }
 .trips-para a{
-  color:#4483a2;
+  color:#4E8BC1;
 }
 .trips-pictures{
   padding: 3rem 0;
+}
+.trips-picture1{
+  padding: 0 0;
+  padding-bottom: 40px;
 }
 .trips-pictures img{
   border-radius: 20px;
@@ -1834,26 +1859,64 @@ font-weight: 500;
   height: 230px;
   object-fit: cover;
 }
-.trips-text h3{
+.trips-pictures-text h3{
   font-family: 'Rubik', sans-serif;
 font-size: 25px;
 font-weight: 600;
 padding-top: 20px;
 }
-.trips-text p{
+.trips-pictures-text p{
   font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.trips-pictures-text button{
+  border: 2px solid #BC7F66;
+  background-color: #fff;
+  padding: 3px 16px;
+}
+.trips-pictures-text a{
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Rubik', sans-serif;
+font-size: 20px;
+font-weight: 600;
+}
+.trips-form-uppertext p{
+  font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
-.trips-text button{
-  border: 2px solid #BC7F66;
-  background-color: #fff;
-  padding: 3px 20px;
+.trips-form-uppertext1 p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
-.trips-text a{
-  text-decoration: none;
-  color: #000000;
+.trips-form-uppertext1 span{
+  font-weight: 500;
+}
+
+.trips-form input{
+  border: none;
+  box-shadow: none !important;
+}
+.first{
+  border-bottom: 1px solid #243544;
+}
+.consultation-form{
+  padding-bottom: 70px ;
+}
+.trips-form .form-control::placeholder{
   font-family: 'Noto Sans', sans-serif;
 font-size: 20px;
-font-weight: 600;
+font-weight: 500;
+color: #8B8B8B;
+}
+.consultation-form button{
+  border: 2px solid #BC7F66;
+  background-color: #fff;
+  padding: 3px 22px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
