@@ -26,6 +26,9 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="spinners"></div>
+  </div>
   <div class="main">
     <!-- Swiper -->
     <div class="swiper mySwiper">
@@ -514,7 +517,7 @@
         </div>
         <div class="col-md-6 index mx-auto">
           <div class="form-section d-flex justify-content-between p-4">
-            <div class="text  align-items-center p-4">
+            <div class="text  align-items-center">
               <h2>NEVER</h2>
               <h2>STOP</h2>
               <h2>EXPLORING!</h2>
@@ -623,10 +626,10 @@
     },
 
     loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: true,
+    // },
   })
 </script>
 <!-- Initialize Swiper-end -->
@@ -800,5 +803,16 @@
       disableOnInteraction: true,
     },
   });
+
+
+// preloader
+
+
+
+setInterval(function(){
+document.querySelector(".preloader").style.display='none';
+},500)
+
+
 </script>
 <!-- supporters-end -->

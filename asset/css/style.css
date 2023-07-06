@@ -32,6 +32,33 @@ h5,
 h6 {
   margin: 0;
 }
+.preloader{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #06293a;
+display: flex;
+align-items: center;
+justify-content: center;
+
+z-index: 9999;
+}
+.preloader .spinners{
+width: 100px;
+height: 100px;
+border: 2px solid white;
+border-left: transparent;
+border-radius: 50%;
+animation: loader 2s infinite;
+}
+
+@keyframes loader {
+  100%{
+    transform: rotate(360deg);
+  }
+}
 
 .main {
   position: relative;
@@ -50,7 +77,6 @@ h6 {
 }
 .header.scrolled {
   background-color: rgba(0, 0, 0, 25%);
-
 }
 
 .header a {
@@ -199,18 +225,18 @@ h6 {
 .mySwiper::before{
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   right: 0px;
   left: 0px;
   width: 100%;
-  height: 200px;
+  height: 150px;
   background: rgb(10, 7, 1);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  z-index: 22;
+  z-index: 2;
 }
 .mySwiper .swiper-pagination {
   right: 7rem;
@@ -256,27 +282,27 @@ h6 {
 .overlay{
   position: absolute;
   top:0;
-    left:0;
-    right:0;
-    bottom:0;
+  left:0;
+  right:0;
+  bottom:0;
   height: 100vh;
   background-color: rgba(0, 0, 0, 32%);
   z-index: -1;
 }
 .slider1 {
-  background-image: url(../images/Slider/Component-1-GÃ_Ã´-1.png);
+  background-image: url(../images/Slider/component-1.png);
   background-size: cover;
   height: 100%;
 }
 
 .slider2 {
-  background-image: url(../images/Slider/Component-2-GÃ_Ã´-1.png);
+  background-image: url(../images/Slider/component-2.png);
   background-size: cover;
   height: 100%;
 }
 
 .slider3 {
-  background-image: url(../images/Slider/Component-3-GÃ_Ã´-1.png);
+  background-image: url(../images/Slider/component-3.png);
   background-size: cover;
   height: 100%;
 }
@@ -286,8 +312,10 @@ h6 {
   margin-bottom: 10px;
 }
 .main-swiper-text {
+  position: relative;
   font-family: 'Rubik', sans-serif;
   padding: 0px 20px;
+  z-index: 146 !important;
 }
 
 .main-swiper-text p {
@@ -790,6 +818,8 @@ opacity: 0;
   border-radius: 15px;
   z-index: 2;
   width: 100%;
+  align-items: center;
+  gap: 40px;
 }
 .index {
   z-index: 2;
@@ -812,8 +842,8 @@ opacity: 0;
 
 .text h2 {
   font-family: 'Rubik', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
+  font-weight: 800;
+  font-size: 24px;
 }
 .form h4 {
   font-family: 'Rubik', sans-serif;
@@ -1642,6 +1672,7 @@ object-fit: cover;
   font-family: 'Rubik', sans-serif;
   font-size: 22px;
   font-weight: 600;
+  margin-bottom: 12px;
   /* padding-bottom: 10px ; */
 }
 .travel-experience-text p{
@@ -1650,6 +1681,12 @@ object-fit: cover;
   font-weight: 500;
   /* width: 95%; */
 }
+
+.travel-experience-text p.txt{
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
 .travel-experience-text a{
   color: #3896e9;
 }
@@ -1789,8 +1826,12 @@ font-weight: 700;
 text-align: center;
 }
 .wallpaper-content{
-  position: relative;
+  position: relative;}
+
+  .wallpaper-pictures {
+    position: relative;
 }
+
 .wallpaper-pictures img{
   border-radius: 20px;
   width: 100%;
@@ -1805,12 +1846,11 @@ font-weight: 600;
 position: absolute;
 bottom: 0%;
 color: #fff;
-/* justify-content: center; */
-/* width: 100%; */
+justify-content: center;
+width: 100%;
+gap: 12px;
 }
-.wallpaper-likes p{
-  
-}
+
 .wallpaper-button{
   /* padding: 3rem 0; */
 }
@@ -1899,6 +1939,7 @@ font-weight: 600;
 .trips-form input{
   border: none;
   box-shadow: none !important;
+  padding-left: 0;
 }
 .first{
   border-bottom: 1px solid #243544;
@@ -1919,4 +1960,7 @@ color: #8B8B8B;
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
   font-weight: 600;
+}
+form.form {
+  flex: 1;
 }
