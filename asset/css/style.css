@@ -839,10 +839,12 @@ opacity: 0;
 .form .form-control::placeholder {
   color: #000000;
 }
-
+form.form {
+  flex: 1;
+}
 .text h2 {
   font-family: 'Rubik', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 24px;
 }
 .form h4 {
@@ -1430,7 +1432,11 @@ font-weight: 700;
 .South-america-content{
   padding-bottom: 100px;
 }
-
+@media (max-width:767px) {
+  .asia-content img{
+    height: 350px;
+  }
+}
 /* contact */
 .contact-me{
   padding: 3rem 0;
@@ -1655,9 +1661,7 @@ color: #000000;
   border-radius: 20px;
   margin: 2rem 0;
 }
-/* .travel-experience{
- 
-} */
+
 .travel-experience .inner-padd{
   padding: 0px 20px;
 }
@@ -1698,6 +1702,11 @@ object-fit: cover;
 @media (max-width:767px) {
   .blog-like-text1 h4{
  text-align: end;
+  }
+  .travel-experience-image img{
+    height: auto;
+    margin-bottom: 10px;
+ 
   }
 }
 @media (max-width:576px){
@@ -1792,6 +1801,12 @@ font-size: 15px;
   .explore-cards{
 padding: 20px;
   }
+  .travel-cards img{
+    height: 500px;
+  }
+  .explore-cards img{
+    height: 500px;
+  }
 }
 
 
@@ -1860,6 +1875,12 @@ font-size: 25px;
 font-weight: 500;
 text-decoration: none;
 color: #000000;
+}
+
+@media (max-width:767px) {
+  .wallpaper-pictures{
+    margin: 15px;
+  }
 }
 
 /* Trips */
@@ -1961,6 +1982,157 @@ color: #8B8B8B;
   font-size: 20px;
   font-weight: 600;
 }
-form.form {
-  flex: 1;
+@media (max-width:767px) {
+  .trips-pictures img{
+    height: auto;
+  }
+}
+/* Uganda */
+
+.uganda-main{
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.uganda-main-image img{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.uganda-heading h1{
+  font-family: 'Rubik', sans-serif;
+font-size: 45px;
+font-weight: 500;
+}
+.uganda-para p{
+  font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 500;
+color: #243544;
+}
+.uganda-sub-content h4{
+  font-family: 'Noto Sans', sans-serif;
+  color: #243544;
+  font-size: 22px;
+font-weight: 700;
+
+}
+.included-text{
+color: #243544;
+font-family: 'Noto Sans', sans-serif;
+}
+.included-text h4{
+  font-size: 22px;
+font-weight: 700;
+}
+.included-text ul{
+  padding-left: 16px;
+}
+.included-text li{
+  font-size: 20px;
+  font-weight: 500;
+}
+.note-text li a{
+  color: #243544;
+  text-decoration: none;
+}
+.note-text p{
+font-family: 'Noto Sans', sans-serif;
+font-size: 20px;
+font-weight: 500;
+}
+.note-text a{
+  color: #4E8BC1;
+}
+.gorilla-traking-padd{
+  padding: 1.5rem 0;
+  background-color: #BC7F66;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+.gorilla-traking{
+  padding: 0px 40px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+}
+.gorilla-traking h1{
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.gorilla-traking h4{
+  font-size: 22px;
+  font-weight: 400;
+}
+.gorilla-traking button{
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 2px 18px;
+}
+.gorilla-traking a{
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+.gorilla-traking p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 12px;
+  margin-bottom: 0%;
+}
+.uganda-bottom img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.uganda-form a{
+  text-decoration: none;
+  color: #000000;
+}
+@media (max-width:767px) {
+  .uganda-bottom img{
+    height: auto;
+  }
+}
+
+/* Booking received */
+
+.booking-main{
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.booking-image img{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.booking-text{
+  padding-left: 30px;
+  margin-bottom: 60px;
+}
+.booking-heading h1{
+  font-family: 'Rubik', sans-serif;
+font-size: 45px;
+font-weight: 500;
+padding-bottom: 15px;
+}
+.booking-heading p{
+font-family: 'Noto Sans', sans-serif;
+font-size: 22px;
+font-weight: 500;
+padding-bottom: 15px;
+}
+.booking-heading button{
+  border: 2px solid #BC7F66;
+  background-color: #fff;
+  padding: 2px 15px;
+}
+.booking-heading a{
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-size:22px;
+  font-weight: 500;
+  color: #000000;
 }
