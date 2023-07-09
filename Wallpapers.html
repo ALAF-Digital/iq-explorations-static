@@ -79,6 +79,7 @@
     </div>
     <!-- header-end -->
 
+
     <div class="mobile-wallpapers">
         <div class="container">
             <div class="wallpaper-heading">
@@ -96,10 +97,10 @@
 
 
             <div class="wallpaper-content">
-                <div class="row pt-5 " >
+                <div class="row pt-5 ">
                     <div class="col-md-4">
                         <div class="wallpaper-pictures">
-                         <img src="asset/images/IQ/Scroll-Group-4.png" alt="">
+                            <img src="asset/images/IQ/Scroll-Group-4.png" class="wallpaper-item" data-bs-toggle="modal" data-bs-target="#wallpaperpopup" onclick="imagepopup(this.src)" alt="">
 
                             <div class="wallpaper-likes d-flex">
                                 <p>120 <i class="fas fa-arrow-down"></i></p>
@@ -111,7 +112,7 @@
 
                     <div class="col-md-4">
                         <div class="wallpaper-pictures">
-                            <img src="asset/images/group image 6 copy.jpg" alt="">
+                            <img src="asset/images/group image 6 copy.jpg" class="wallpaper-item" data-bs-toggle="modal" data-bs-target="#wallpaperpopup" onclick="imagepopup(this.src)" alt="">
                             <div class="wallpaper-likes d-flex">
                                 <p>120 <i class="fas fa-arrow-down"></i></p>
                                 <p>300 <i class="far fa-heart"></i></p>
@@ -121,7 +122,7 @@
 
                     <div class="col-md-4">
                         <div class="wallpaper-pictures">
-                            <img src="asset/images/images for the website/Kenya/0Z9A5526.webp" alt="">
+                            <img src="asset/images/images for the website/Kenya/0Z9A5526.webp" class="wallpaper-item"  data-bs-toggle="modal" data-bs-target="#wallpaperpopup" onclick="imagepopup(this.src)" alt="">
                             <div class="wallpaper-likes d-flex">
                                 <p>120 <i class="fas fa-arrow-down"></i></p>
                                 <p>300 <i class="far fa-heart"></i></p>
@@ -136,7 +137,7 @@
                 <div class="row pt-4">
                     <div class="col-md-4">
                         <div class="wallpaper-pictures">
-                            <img src="asset/images/group image 3 copy.jpg" alt="">
+                            <img src="asset/images/group image 3 copy.jpg" class="wallpaper-item" data-bs-toggle="modal" data-bs-target="#wallpaperpopup" onclick="imagepopup(this.src)" alt="">
 
                             <div class="wallpaper-likes d-flex">
                                 <p>120 <i class="fas fa-arrow-down"></i></p>
@@ -148,7 +149,7 @@
 
                     <div class="col-md-4">
                         <div class="wallpaper-pictures">
-                            <img src="asset/images/images for the website/Serbia/0Z9A1370.jpg" alt="">
+                            <img src="asset/images/images for the website/Serbia/0Z9A1370.jpg" class="wallpaper-item" data-bs-toggle="modal" data-bs-target="#wallpaperpopup" onclick="imagepopup(this.src)" alt="">
                             <div class="wallpaper-likes d-flex">
                                 <p>120 <i class="fas fa-arrow-down"></i></p>
                                 <p>300 <i class="far fa-heart"></i></p>
@@ -158,7 +159,7 @@
 
                     <div class="col-md-4">
                         <div class="wallpaper-pictures">
-                            <img src="asset/images/images for the website/Iceland/IMG_0067iceland.webp" alt="">
+                            <img src="asset/images/images for the website/Iceland/IMG_0067iceland.webp" class="wallpaper-item" data-bs-toggle="modal" data-bs-target="#wallpaperpopup" onclick="imagepopup(this.src)" alt="">
                             <div class="wallpaper-likes d-flex">
                                 <p>120 <i class="fas fa-arrow-down"></i></p>
                                 <p>300 <i class="far fa-heart"></i></p>
@@ -173,6 +174,50 @@
             </div>
         </div>
     </div>
+
+
+   
+
+    <!-- Modal -->
+    <div class="modal fade" id="wallpaperpopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-head-button m-3 ">
+                    <button type="button" class="btn-close mx-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-button  text-center">
+                        <button class="but"><a href="#">Like</a></button>
+                        <button class="but-1 mx-2" ><a href="#">Download</a></button>
+                    </div> 
+                </div>
+                
+
+
+                <div class="modal-body">
+                    
+                    <div class="wallpaper-pictures modal-image">
+                        <div class="col-md-8 mx-auto">
+                        <img src="asset/images/IQ/Scroll-Group-4.png" class="modal-img" alt="">
+                        <div class="modal-bottom d-flex justify-content-center mt-4 mb-3 ">
+                            <p><i class="far fa-eye"></i>7.68M views</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Sharjah, UAE </p>
+                            <p><i class="far fa-check-circle"></i>Free for mobile wallpapwer use only</p>
+                        </div>
+                        <div class="bottom-button text-center mb-5">
+                            <a href="#">Share</a>
+                        </div>
+                    </div>
+                    </div>
+
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+                
+            
 
     <!-- footer-->
 
@@ -277,6 +322,15 @@
 <script src="asset/js/swiper-bundle.min.js"></script>
 <script src="asset/js/jquery-3.6.0.min.js "></script>
 <script src="asset/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+  
+    function imagepopup(img){
+        document.querySelector(".modal-img").src = img;
+
+    }
+</script>
 
 
 <script>
