@@ -2229,6 +2229,9 @@ color: #243544;
     height: 700px;
    
     }
+    .modal-button button{
+      margin: 10px 0px;
+     }
 }
 
 @media (max-width:576px) {
