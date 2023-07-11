@@ -75,8 +75,8 @@ animation: loader 2s infinite;
   position: fixed;
   transition: 0.5s ease-in-out, color 0.3s ease-in-out;
 }
-.header.scrolled {
-  background-color: rgba(0, 0, 0, 25%);
+.header.scrolled{
+  background-color: rgba(0, 0, 0, 60%);
 }
 
 .header a {
@@ -90,6 +90,7 @@ animation: loader 2s infinite;
 .header h2 {
   font-family: 'Noto Kufi Arabic', sans-serif;
   font-weight: 500;
+  font-size: 25px;
 }
 
 .logo {
@@ -1405,7 +1406,7 @@ border-radius: 20px;
 }
 .desti-heading{
 padding-top: 100px;
-padding-bottom: 30px;
+padding-bottom: 50px;
 }
 .desti-heading h1{
 font-size: 45px;
@@ -1418,7 +1419,7 @@ color: #243544;
 color: #243544;
 }
 .asia-content{
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .asia-content img{
   width: 100%;
@@ -1428,7 +1429,7 @@ border-radius: 15px;
 }
 .asia-text h3{
 font-size: 25px;
-font-weight: 700;
+font-weight: 600;
 }
 .South-america-content{
   padding-bottom: 100px;
@@ -1804,6 +1805,7 @@ bottom: 0%;
 color: #fff ;
 padding: 18px;
 padding-bottom: 40px;
+
 }
 .explore-cards-text p{
   font-size: 28px;
