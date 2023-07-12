@@ -76,9 +76,23 @@ animation: loader 2s infinite;
   transition: 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 .header.scrolled{
-  background-color: rgba(0, 0, 0, 60%);
+  background-color: #062a3c;
 }
-
+.header-1.scrolled .logo-1 a{
+  color: #fff !important;
+}
+.header-1.scrolled .header-icons i{
+  color: #fff !important;
+}
+.header-1.scrolled .header-icons h2{
+  color: #fff !important;
+}
+.header-1.scrolled .btn-1 span{
+  background-color: #fff !important;
+}
+.header-1.scrolled .logo-1 {
+  border-bottom: none !important;
+}
 .header a {
   font-family: 'Libre Baskerville', serif;
   font-size: 17px;
@@ -1428,7 +1442,7 @@ color: #243544;
 border-radius: 15px;
 }
 .asia-text h3{
-font-size: 25px;
+font-size: 22px;
 font-weight: 600;
 }
 .South-america-content{
@@ -1549,14 +1563,14 @@ font-size: 45px;
 }
 .por-visit-heading h1{
   font-family: 'Noto Sans', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 .por-visit-text p{
   font-family: 'Noto Sans', sans-serif;
 font-size: 20px;
-font-weight: 600;
+font-weight: 500;
 }
 .por-visit-image img{
   border-radius: 20px;
@@ -1590,13 +1604,13 @@ padding-top: 10px;
 }
 .what-to-visit-text h3{
   font-family: 'Noto Sans', sans-serif;
-font-size: 28px;
+font-size: 26px;
 font-weight: 700;
 }
 .what-to-visit-text p{
   font-family: 'Noto Sans', sans-serif;
 font-size: 20px;
-font-weight: 600;
+font-weight: 500;
 padding-top: 15px;
 }
 .southshore p{
@@ -1676,7 +1690,7 @@ color: #000000;
 }
 .travel-padd{
   padding: 1.2rem 0;
-  background-color: #e3dcdc;
+  background-color: rgb(226, 226, 226);
   border-radius: 20px;
   margin: 2rem 0;
 }
@@ -1686,10 +1700,13 @@ color: #000000;
 }
 .travel-experience-image img{
   border-radius: 20px;
-  width: 100%;
+  width: 80%;
   height: 180px;
 object-fit: cover;
 /* margin-left: 15px; */
+}
+.travel-experience-text{
+  margin-left: -50px;
 }
 .travel-experience-text h4{
   font-family: 'Rubik', sans-serif;
@@ -1716,6 +1733,12 @@ object-fit: cover;
 @media (max-width:991px) {
   .blog-like-text1 button{
     display: none;
+}
+.travel-experience-text{
+  margin-left: 0px;
+}
+.travel-experience-image img{
+width: 100%;
 }
 }
 @media (max-width:767px) {
@@ -1759,7 +1782,7 @@ padding-bottom: 40px;
 }
 .travel-cards p{
   font-family: 'Noto Sans', sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   padding-top: 12px;
 }
@@ -1804,10 +1827,10 @@ position: absolute;
 bottom: 0%;
 color: #fff ;
 padding: 18px;
-padding-bottom: 40px;
+padding-bottom: 60px;
 
 }
-.explore-cards-text p{
+.explore-cards-text span{
   font-size: 28px;
 }
 .explore-cards-text a{
@@ -2249,4 +2272,22 @@ color: #243544;
 /* kenyaform */
 .kenya-form{
   margin-top: 80px;
+}
+
+/* Privacy Policy */
+
+.privacy-main{
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.privacy-main h1{
+font-family: 'Rubik', sans-serif;
+font-size: 35px;
+}
+.privacy-main p{
+font-family: 'Noto Sans', sans-serif;
+}
+.privacy-sub-heading1 a{
+  text-decoration: none;
+  color: #000000;
 }
